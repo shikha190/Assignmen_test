@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class lec</title>
+</head>
+<style>
+   body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60PX;
+    background-attachment: fixed;
+    background-color:lightgray;
+   }
+   .table{
+    border: 4px solid#420420;
+    background-color: #c8ede7;
+    border: 7px solid #003366;
+    border-top: 7px solid #cf96ca;
+    border-bottom: 7px solid #cf96ca;
+    animation: 1s linear 1s infinite alternate-reverse rotatecircle ;
+   }
+   .head{
+    font-size: 25px;
+    text-shadow: 2px 2px 3px #d82f7b; 
+    /* x axis y axis and transparent text shadow  */
+   }
+   .head:hover{
+    text-shadow:2px 3px 4px #003366;
+   }
+   
+   @keyframes  rotatecircle {
+
+    0%{
+       
+        border: 7px solid #003366;
+    }
+    20%{
+        border-top: 7px solid #cf96ca;
+        border: 7px solid #003366;
+    }
+    100%{
+        
+        border-bottom: 7px solid #cf96ca;
+    }
+    
+   }
+  
+   
+</style>
+<body>
+    <!-- project 1 -->
+    <table class="table" border cellpadding="13px">
+        <thead>
+            <tr>
+                <th colspan="8" class="head">Time Table</th>
+            </tr>
+            <tr>
+                <th>Days/Lec</th>
+                <th>I <br/>09:30-10:15</th>
+                <th>II <br/>10:25-11:10</th>
+                <th>III <br/>11:20-12:00</th>
+                <th>Lunch <br/> 12:00:12:30</th>
+                <th>IV <br/>12:30-01:15</th>
+                <th>V <br/>01:25-02:15</th>
+                <th>VI <br/>02:25-03:00</th>
+                
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Hindi</td>
+                <td rowspan="2">English</td>
+                <td>Math</td>
+                <td rowspan="5">Lunch</td>
+                <td rowspan="2"> Social Science</td>
+                <td>  Science</td>
+                <td>Sanskrit</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Math</td>
+                <!-- <td>English</td> -->
+                <td>Hindi</td>
+                <!-- <td>Social Science</td> -->
+                <td>Sanskrit</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td> Social Science</td>
+                <td>Hindi</td>
+                <td>English</td>
+                <td>Sanskrit</td>
+                <td>Math</td>
+                <td rowspan="2">science</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td colspan="2">Hindi</td>
+                <!-- <td>Hindi</td> -->
+                <td>Social science</td>
+                <td>Math</td>
+                <td>English</td>
+                <!-- <td>Science</td> -->
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td rowspan="2">Math</td>
+                <td>Social science</td>
+                <td>Science</td>
+                <td>Sanskrit</td>
+                <td>Hindi</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <!-- <td>Math</td> -->
+                <td>Science</td>
+                <td>English</td>
+                <td colspan="4">Half day</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
