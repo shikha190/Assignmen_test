@@ -7,22 +7,24 @@
    
 }
 body{
-    width:80vw ;
-    background-image:url(./photos/bg.png);
+  
+    width: 100%;
+    height: 100%;
+    background-image: url(./photos/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     
     /* background-repeat: no-repeat;
     overflow-y: hidden;  */
-     
-  
 }
+
 
 
 .navigation{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 40px;
+    /* padding: 0 60px 0 60px; */
     /* gap: 20px; */
 }
 
@@ -31,6 +33,7 @@ body{
     gap: 75px;
     /* color: #ffff00; */
     cursor: pointer;
+    line-height: 20px;
 }
 
 .logo img{
@@ -48,7 +51,7 @@ li a{
     margin-right: 30px;
     background-color: #ff505f;
     border: none;
-    color: white;
+    color: #ffffff;
     padding: 7px 25px;
     text-align: center;
     text-decoration: none;
@@ -66,6 +69,8 @@ li a{
     text-decoration: none;
     /* display: inline-block; */
     font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
     cursor: pointer;
 }
 
@@ -73,21 +78,26 @@ section{
    text-align: center;
    display: flex;
    flex-direction: column;
-}
-section>div{
-    margin-top: 40px;
+   max-width: 1154px;
+   margin: 0 auto;
+  
 }
 
+
 .para{
+    /* max-width: 1154px; */
+    margin-top: 119px;
     color: #ffc233;
     font-family: 'Poppins', sans-serif;
     font-size: 70px; 
     opacity: 0.7;
+  
    
 }
 
 .scroll{
-  align-self: flex-end;  
+ 
+margin-left: auto;
 
 }
 
