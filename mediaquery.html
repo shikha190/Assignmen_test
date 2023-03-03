@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media query</title>
+    <!-- <link rel="stylesheet" href="./pw.css"> -->
+
+    <style>
+      /* postion */
+
+      .box {
+        height: 100px;
+        width: 100px;
+      }
+      .box1 {
+        background-color: #19f450;
+        border: 1px solid black;
+      }
+
+      .box2 {
+        background-color: #00ffff;
+        /* position: fixed;
+        bottom: 0%;
+        right: 10px;
+        border-radius: 50%; */
+        /* border: 1px solid black;
+        position: relative;
+        left: 25px;
+        top: 40px; */
+      }
+
+      .box3 {
+        background-color: #e74848;
+        /* position: sticky;
+        top: 10px; */
+        border: 1px solid black;
+      }
+
+      .cont {
+        /* flex and inline flex in difference */
+        display: flex;
+        /* display: inline-flex; */
+        /* border: 1px solid black; */
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
+      }
+
+      .container {
+        width: 500px;
+        height: 100px;
+      }
+      .box4 {
+        background-color: #8fba99;
+        /* order: 5; */
+        flex-grow: 2;
+      }
+
+      .box5 {
+        background-color: #d0f419;
+        order: 5;
+        flex-shrink: 2;
+      }
+
+      .box6 {
+        background-color: #1941f4;
+        order: 3;
+        flex-basis: 2;
+      }
+
+      .gridcont{
+        /* display: flex; */
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px 100px 100px 100px ;
+
+      }
+
+       .grid{
+        /* width:100px ; */
+       /* height: 100px;  */
+       margin: 10px;
+      } 
+      .box7{
+        background-color: #d0f419;
+      
+      }
+      .box8{
+        background-color: #57f419;
+      }
+      .box9{
+        background-color: #e515a3;
+      }
+
+      .album{
+        display: grid;
+        height: 500px;
+        width: 550px;
+        grid-template-columns: repeat(3,1fr);
+        /* grid-template-rows: repeat(3,250px); */
+      }
+      .photos{
+        /* width: 100px;
+        height: 100px; */
+        overflow: hidden;
+        background-size: cover;
+        border: 10px solid rgb(122, 16, 243);
+      }
+      .img1{
+        background-color: #eab0d7;
+        border: 1px solid black;
+       
+      }
+      .img2{
+        background-color: #b1e180;
+        border: 1px solid black;
+      }
+      .img3{
+        background-color: #55a2e1;
+        border: 1px solid black;
+      }
+      .img4{
+        background-color: #5a5ae9;
+        border: 1px solid black;
+      }
+      .img5{
+        background-color: #d88051;
+        border: 1px solid black;
+      
+      }
+      .img6{
+        background-color: #1fe405;
+        border: 1px solid black;
+      }
+      .img7{
+        background-color: #0a0a0a;
+        border: 1px solid black;
+      }
+      .img8{
+        background-color: #c9c9a7;
+        border: 1px solid black;
+      }
+      .img9{
+        background-color: #676667;
+        border: 1px solid black;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- <div></div> -->
+    <!-- <div class="query"></div> -->
+    <!-- <iframe src="https://www.youtube.com/embed/ER9SspLe4Hg" frameborder="1" ></iframe>  -->
+
+    <!-- position -->
+    <!-- <div class="main">
+      <div class=" box box1">1</div>
+      <div class=" box box2">2</div>
+      <div class=" box box3">3</div>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quis omnis eum delectus, obcaecati, exercitationem repellat aperiam est quidem excepturi, ea soluta impedit nulla nobis? Quaerat facere labore nisi provident quasi quod, soluta voluptatem, natus veniam dolorem fugiat nostrum consequatur necessitatibus incidunt. Eum tenetur consectetur eaque necessitatibus pariatur temporibus rem quisquam sint in, recusandae dolor quae vel a, laborum, doloribus optio iste blanditiis. Vitae tenetur, porro repellendus minus magni a dolorem necessitatibus id, nulla veniam ipsa? Non sit porro explicabo culpa corporis maxime nisi eveniet itaque. Voluptatum rem laboriosam blanditiis eum consequatur illo dolorem ad magni quas eaque quasi, aspernatur saepe necessitatibus numquam quo, eligendi ex minus ut. Ullam corporis eos at ea odit dolores sequi, deleniti iure. Saepe doloremque, et tenetur incidunt iste repellendus eveniet dolore temporibus dolor libero voluptates nam voluptate corporis quidem, minus autem, eos deleniti cumque voluptatibus ea? Possimus qui maxime dolore ullam beatae quas accusantium, perspiciatis assumenda debitis, dicta tempora. Quo sed hic ut, aperiam nam, repellendus sint rerum eum debitis aliquam libero, eius neque commodi porro quae pariatur? Maiores explicabo, facilis reprehenderit architecto odit nulla vel consequatur commodi quos deserunt corrupti praesentium! Rem voluptatibus, quo a optio provident explicabo placeat eius sequi minus odio. Pariatur tempora vitae natus. Tempore molestias incidunt consectetur adipisci accusantium, perferendis ipsum placeat. Doloribus ullam esse consequatur est nemo magni consectetur, repellendus ab asperiores temporibus quo accusantium sed, perspiciatis nesciunt expedita aperiam vitae sequi illum beatae id cumque omnis voluptate qui? Pariatur, illum dolorum laborum architecto delectus rerum dolore sequi inventore ipsa quia. Neque, consectetur recusandae quam iusto dicta, veritatis explicabo mollitia incidunt debitis enim, velit quo numquam doloremque modi praesentium laudantium alias. Molestiae cumque, deleniti iure laborum eligendi tempore nesciunt perferendis earum a vitae delectus, mollitia hic iusto quidem, dolores quo velit repellat! Ut autem praesentium neque repellendus optio! Adipisci odio ipsum qui, praesentium maiores voluptates dolores aut consectetur eos eligendi atque eveniet doloribus sunt quidem, dicta eius dignissimos ipsam. Deleniti culpa nostrum quam commodi, maxime consequatur quasi dolor alias est earum quis sunt eius, nisi enim necessitatibus laboriosam officiis iste vel velit repellat numquam. Reprehenderit aperiam quia blanditiis sit vitae illo nam ut dolor cumque recusandae! Facere asperiores nobis a aliquam voluptates molestiae dolor dolorem veniam consequuntur. Odit sit aperiam consequuntur facere, enim est aliquid reiciendis placeat culpa quae iste itaque animi quidem at necessitatibus minima fugit vero delectus, laboriosam quibusdam, atque ad laudantium! Veritatis, autem deleniti. Molestias explicabo repellendus dolore, itaque quia, distinctio pariatur sint iusto ipsam consequatur praesentium facilis voluptatum. Beatae, harum optio est nisi aspernatur itaque deleniti neque perspiciatis dolores, qui ipsam quis nobis ipsum, vel dolor nulla tempora consequuntur reprehenderit recusandae! Sint dolores earum numquam voluptatum illum doloremque accusantium hic, ea tenetur voluptates eaque recusandae, dignissimos laudantium soluta ipsa nam accusamus itaque dolor. Deleniti repellat sint excepturi eligendi, vel totam inventore doloremque temporibus omnis facilis voluptatum quis velit? Maiores doloribus maxime corporis optio inventore, odio tempore sed iure? Fuga repellat aperiam dolorem, exercitationem ea ullam, nesciunt esse quaerat adipisci accusantium nobis neque velit eum qui tempore atque officiis? Mollitia eos molestias sint eius, libero rem inventore neque harum obcaecati a iste. Atque facilis ipsum temporibus fugit cum ullam architecto animi eveniet facere deleniti quas nemo repellat id cumque, recusandae dolorem labore dolor doloribus mollitia, quasi a culpa doloremque. Rerum labore error corrupti ab velit voluptatem nobis porro quidem. Consectetur repellat suscipit possimus repellendus vero ex ullam ea, maiores accusamus provident odit, inventore magnam odio aperiam illo, quaerat incidunt! Dolor ab est rerum? Obcaecati, saepe modi? Fugit corrupti, tempore officiis quo ut quibusdam nam? Totam doloribus consequuntur suscipit assumenda sunt id ducimus vel ut est mollitia, quam reprehenderit nemo asperiores veritatis sequi molestiae dolor harum temporibus? A libero ipsam voluptatibus minus, distinctio ratione nesciunt fuga! Porro voluptatem numquam iusto esse amet consectetur magni eveniet, alias excepturi dignissimos repudiandae necessitatibus incidunt aliquid nihil ipsam! Tenetur ab, minus corrupti fugiat modi deleniti hic vel minima dicta adipisci asperiores illo quos dolores esse aut eos quis quae sint, quidem nemo vitae, recusandae nisi? Porro beatae aperiam ducimus recusandae. Id soluta nulla nemo modi. Esse, ex magni nemo corrupti iure quisquam explicabo doloremque consequuntur voluptas cupiditate tenetur omnis aliquam maiores? Accusamus ipsum quo eum fugiat perspiciatis quibusdam minus molestiae! Animi unde consectetur sunt inventore nisi sapiente deserunt quo harum atque culpa eveniet impedit, illo amet cum sequi, laboriosam soluta voluptas molestiae vero exercitationem totam incidunt! Veniam dolores amet aut est porro architecto in iste, hic sapiente, incidunt obcaecati debitis repudiandae quaerat ratione omnis beatae officiis possimus. Velit maxime facere quaerat veritatis alias dicta veniam ipsam aperiam ea aut quam fugit quae, nisi consequatur harum ut commodi laboriosam reiciendis odit minima adipisci eaque, unde ipsum. Ab voluptate aliquid quam excepturi tempore quaerat tempora. Cum, harum recusandae? Dicta fuga optio itaque asperiores voluptates, est, aspernatur odio ex deleniti placeat dolorum perferendis, recusandae provident debitis. Adipisci, magni. Similique possimus autem aut eum quae adipisci iure eaque repellat amet, recusandae voluptates incidunt consectetur atque quibusdam ratione nostrum error, sint velit ad. Dignissimos, ducimus cum! Aut vitae, rem beatae sint minus laboriosam molestias quo ex placeat! Magnam explicabo nemo natus temporibus at odit recusandae et totam consectetur omnis, eum, labore accusantium cum enim quam dolores ullam ipsum nisi? Quae sequi error quibusdam reprehenderit quos a voluptates nihil voluptate. Earum, consequatur perspiciatis obcaecati dicta, distinctio molestiae quidem quibusdam deleniti quis possimus incidunt doloremque, dolorem numquam ad? Fugit nam fuga exercitationem voluptatem, dolor itaque natus autem temporibus, est delectus aspernatur magni quam nisi mollitia ratione ut deleniti illo et cupiditate dolore libero velit. Corrupti facere et facilis eaque nihil quisquam sapiente sed eveniet, quam qui, ipsam accusamus temporibus, quae libero totam rem fugit possimus. Amet eius doloremque quo, debitis sed eligendi eos. Odio consectetur, harum veniam nihil vel accusantium dolorum sequi excepturi, pariatur, magni laudantium aliquam reiciendis distinctio enim? Ullam eaque aperiam, corrupti tempora quas velit exercitationem veritatis commodi, facere quaerat delectus at assumenda esse eos nemo iste vero fugiat sed quasi sapiente dolorem. Neque doloremque accusamus blanditiis eligendi eum, corrupti odio hic ex natus debitis?</p>
+     
+    </div> -->
+    <!-- <div class="cont">
+      <div class="container box4">box4</div>
+      <div class="container box5">box5</div>
+      <div class="container box6">box6</div>
+    </div> -->
+    <!-- <br/>
+    <br/> -->
+    <!-- grid system -->
+    <!-- <div class="gridcont">
+    <div class="grid box7"></div>
+    <div class="grid box8"></div>
+    <div class="grid box9"></div>
+    <div class="grid box7"></div>
+    <div class="grid box8"></div>
+    <div class="grid box9"></div>
+    <div class="grid box7"></div>
+    <div class="grid box8"></div>
+    <div class="grid box9"></div>
+    </div> -->
+    <!-- create album grid  -->
+<div class="album">
+  <div class="photos img1"> <img height="250px" width="300px" src="/images/gallery/g-2.jpg"/></div>
+
+  <div class="photos img2"> <img height="250px" width="300px" src="/images/gallery/g-1.jpg"/></div>
+
+  <div class="photos img3"> <img  height="250px" width="300px"src="/images/gallery/g-3.jpg"/></div>
+
+  <div class="photos img4"><img height="250px" width="300px"src="/images/gallery/g-7.jpg"/></div>
+
+  <div class="photos img5"> <iframe height="250px" src="https://www.youtube.com/embed/9krlEz6_ams" frameborder="1" autoplay muted controls></iframe></div>
+
+  <div class="photos img6"> <img  height="250px" width="300px"src="/images/gallery/g-6.jpg"/></div>
+
+  <div class="photos img7"> <img height="250px" width="300px"
+    src="/images/gallery/g-5.jpg"></div>
+
+  <div class="photos img8"> <img height="250px" width="300px" src="/images/gallery/g-6.jpg"/></div>
+
+  <div class="photos img9"> <img  height="250px" width="300px"
+    src="/images/gallery/g-2.jpg"/></div>
+</div>
+
+  </body>
+</html>

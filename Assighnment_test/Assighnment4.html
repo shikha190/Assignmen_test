@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query1t</title>
+
+    <style>
+      h3 {
+        text-align: center;
+        font-size: x-large;
+        text-decoration: underline;
+        animation-name: heading;
+        animation-duration: 10s;
+      }
+
+      @keyframes heading {
+        from {
+          background-color: rgb(71, 66, 66);
+         
+        }
+        to {
+          background-color: rgb(93, 136, 230);
+          
+        }
+      }
+
+      .box {
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 800;
+        display: none;
+        border-radius: 10px;
+      }
+
+      .box1 {
+        background-color: #19f450;
+        border: 1px solid black;
+      }
+
+      .box2 {
+        background-color: #00ffff;
+        border: 1px solid black;
+      }
+
+      .box3 {
+        background-color: #e74848;
+        border: 1px solid black;
+      }
+
+      .box4 {
+        background-color: #250aed;
+        border: 1px solid black;
+      }
+
+      /* media query */
+      @media screen and (min-width: 0px) {
+        .box1 {
+          display: block;
+        }
+      }
+
+      @media screen and (min-width: 425px) {
+        .box1 {
+          display: none;
+        }
+        .box2 {
+          display: block;
+        }
+
+      
+      }
+
+      @media screen and (min-width: 768px) {
+        .box1 {
+          display: none;
+        }
+        .box2 {
+          display: none;
+        }
+        .box3 {
+          display: block;
+        }
+
+        
+      }
+
+      @media screen and (min-width: 1024px) {
+        .box1 {
+          display: none;
+        }
+        .box2 {
+          display: none;
+        }
+        .box3 {
+          display: none;
+        }
+        .box4 {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Different Size Screen</h3>
+    <div class="box box1">Mobile size</div>
+    <div class="box box2">Tablet size</div>
+    <div class="box box3">Normal &L aptop size</div>
+    <div class="box box4">Larger size &Desktop</div>
+  </body>
+</html>

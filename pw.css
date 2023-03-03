@@ -1,0 +1,138 @@
+/* index.html also add this link */
+body{
+    background-color: #f41919;
+}
+/* descendet selector  */
+main p{
+    color:blueviolet
+}
+h1 p{
+    color: black;
+    background-color: whitesmoke;
+}
+/* child selector  always web page render to top to bottom*/ 
+h1>p{
+    color:red;    
+}
+/* adjescent sibling selector only section just neeche <p> only change to color   */
+/* section + p{
+    color: blueviolet;
+} */
+/* general sibling selector section ke neece jitne bhi p element hain sabka same color */
+
+section ~ p{
+    color: rgb(175, 232, 17);
+} 
+/* media query file and to this foile and code run to media query */
+div{
+    font-size: x-large;
+    text-align: center;
+}
+div::after{
+    content: "hello i am shikha";
+}
+
+
+@media(max-width:250px){
+body{
+    background-color: blue;
+}
+div::after{
+    content: very small;
+    color: black;
+}
+}
+@media(min-width:250px) and (max-width:500px){
+    body{
+        background-color: blueviolet;
+        font-size: large;
+    }
+    div::after{
+        content:"helllooooojdsabcljn";
+    }
+}
+@media(min-width:500px){
+    /* if view port is atleast 900px
+    then this style will apply */
+    body{
+        background-color: black;
+    }
+
+    
+    div::after{
+        content: "good morning";
+        color: aliceblue;
+    }
+}
+
+@media(min-width:900px){
+    /* if view port is atleast 900px
+    then this style will apply */
+    body{
+        background-color: rgb(233, 21, 209);
+    }
+
+    
+    div::after{
+        content: "good night";
+        color: rgb(15, 122, 215);
+    }
+}
+
+
+/* typical breaking point */
+@media(max-width:600px){
+    /* phones */
+    body{
+        background-color: #f41919;
+    }
+    .query::after{
+        content: "this is mobile compatiable";
+    }
+}
+
+@media(min-width:600px){  /* 600px-768px */
+    body{
+        background-color: rgb(62, 12, 226);
+    }
+    .query::after{
+        content: "this is tablet and big phones compatiable";
+    }
+}
+
+
+@media(min-width:768px){  /* 768px-992px */
+    body{
+        background-color: rgb(14, 14, 13);
+    }
+    .query::after{
+        content: "tablets";
+    }
+}
+
+
+@media(min-width:992px){  /* 992px-1200px */
+    body{
+        background-color: rgb(247, 247, 21);
+    }
+    .query::after{
+        content: "laptop";
+    }
+}
+
+@media(min-width:1200px){  /* more than 1200px */
+    body{
+        background-color: rgb(21, 231, 73);
+    }
+    .query::after{
+        content: "larger screen";
+    }
+}
+
+.query::after{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+ 

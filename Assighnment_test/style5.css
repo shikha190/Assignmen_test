@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #edf1fd;
+ 
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #edf1fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .logo {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  font-weight: 500px;
+  gap: 60px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 20px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #129b9b;
+}
+
+button {
+  background-color: #129b9b;
+  padding: 4px 10px;
+  cursor: pointer;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-weight: 600px;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.search {
+  display: flex;
+  gap: 35px;
+}
+
+input {
+  padding: 3px 10px;
+  border: 1px solid #272727;
+  border-style: groove;
+  border-radius: 3px;
+}
+
+input:focus {
+  color: #000000;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding-left: 110px;
+  justify-content: space-between;
+}
+
+.hero-left-section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.hero-left-section h1 span {
+  color: #129b9b;
+  font-weight: 900;
+  font-size: 2.5rem;
+  /* rem=rootelement by default 16px */
+
+}
+
+.hero-left-section p {
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.hero-left-section p span {
+  font-weight: 700;
+  color: #129b9b;
+  font-size: 25px;
+}
+
+.hero-right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.hero-right-section-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.hero-right-section img{
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    /* margin-left: 100px ; */
+    
+    
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+footer p{
+    font-weight: 600;
+    
+}
+
+footer ul{
+    display: flex;
+    gap: 30px;
+}
+
+
+
+footer ul li a  i{
+   font-size: 30px;
+   color: #241e1e;
+
+   
+
+}
+
+footer ul li a i:hover{
+    color: #129b9b;
+    transform: rotate(360);
+}
+

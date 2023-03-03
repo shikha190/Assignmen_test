@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+  <!-- <link rel="stylesheet" href="./pw.css"> -->
+    <style>
+        div{
+      color:rgba(91, 100, 232, 0.8);
+      background: #000;
+
+        }
+        body{
+            background-image: url(https://images.pexels.com/photos/3905907/pexels-photo-3905907.jpeg); 
+            background-size: cover; 
+            background-position: center;
+            /* background-size: contain; */
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-attachment: local;
+        }
+        .padding{
+            letter-spacing: 2px;
+            color: #212345;
+            /* text-align: center;*/
+            /* text-align: justify;       */
+            /* ek line main */
+            /* text-align-last: center; */
+            /* last line center m ho jayengi this  */
+            text-indent: 20px;
+            font-variant: small-caps;
+            line-height: 10px;
+            border: 5px solid rgb(226, 32, 178);
+            min-width: 400px;
+            display: inline-block;
+            /* required width to contain paragraph using inline block */
+
+           
+        }
+        h5{
+            /* display: inline;only required space */
+            /* display: block; all space required */
+            display: inline-block; 
+            /* width and height de sakte h */
+        }
+        #name:focus{
+            color: #4dc438;
+            background-color:lightcoral;
+            font-size: larger;
+        }
+        .navigate a{
+            text-decoration: none;
+        }
+        .navigate a:first-child{
+            background-color: cadetblue;
+        }
+        .navigate a:nth-child(even){
+            background-color: rgb(240, 152, 37);
+        }
+
+        /* pesudo element special type of selector */
+        #para::first-line{
+            color: rgb(238, 20, 56);
+        }
+
+        #para::first-letter{
+            color: rgb(13, 78, 230);
+        }
+
+        #para::after{
+            content: "shikhajbdkjh";
+            color: rgb(247, 30, 178);
+        }
+
+        #para::before{
+            content: "guptaskjndks";
+            color: rgb(165, 226, 32);
+        }
+
+        #para::selection{
+         background-color: #000;
+           color: yellow;
+        }
+           /* gradiant */
+        .grad{
+            height: 300px;
+            width:800px;
+            /* background-image: linear-gradient(red,yellow,blue); */
+            /* background-image: linear-gradient(to bottom,red,yellow); */
+            /* background-image: radial-gradient(circle ,green,blue,red); */
+            background-image:  repeating-radial-gradient(red 20%, yellow 30%);
+        }
+        /* Transition */
+        .trans{
+            height: 100px;
+            width:100px;
+            background-color: brown;
+            /* transition: width 2s, height 3s; */
+            transition: height 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s;
+        }
+        .trans:hover{
+            /* width: 200px; */
+            height:500px;
+            
+        }
+        .animate{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(218, 43, 43);
+            color: aliceblue;
+            position: relative;
+            animation-name: colorchange;
+            animation-duration: 3s;
+            animation-delay: 4s;
+            /* animation-iteration-count: 3; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-iteration-count kitne baar chalana hain */
+            
+           
+        }
+
+      
+        
+        @keyframes colorchange{
+            /* from{
+                background-color: #212345;
+              top: 0px;
+              left: 0px;
+            }
+            to{
+                background-color: aqua;
+                top: 0px;
+                left: 200px;
+            } */
+
+            0%{
+            background-color: #212345;
+              top: 0px;
+              left: 0px;
+            }
+            25%{
+                background-color: aqua;
+                top: 0px;
+                left: 200px;
+            }
+            50%{
+                background-color: rgb(250, 111, 18);
+                top: 200px;
+                left: 200px;
+            }
+            75%{
+                background-color: rgb(255, 255, 0);
+                top: 200px;
+                right: 0px;
+            }
+            
+            100%{
+                background-color: rgb(255, 255, 0);
+                top: 0px;
+                left: 0px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <!-- animation -->
+    <div class="animate">
+        animation 
+    </div>
+  
+    <br>
+    <div class="trans">About</div>
+    <p title="hello shikha">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem qui quas libero beatae natus est ipsam harum. Ratione culpa commodi quidem obcaecati ad voluptatibus adipisci minima earum, eveniet veritatis.</p>
+    <p>Lorem <u>ipsum </u>dolor <strike>sit</strike> amet.</p>
+    <p>Lorem, <small>ipsum d<mark>olor</mark> sit</small> amet consectetur <big>adipisicing elit.</big> Provident, error?</p>
+    <ins><head>hello</head></ins>    <!-- sybscript and superscript -->
+    <hr>
+    <P>
+<sub>23</sub>100<sup>2</sup>
+    </P>
+    <div><abbr title="word health organisation">WHO</abbr> hello ia m,dbkewgfiuewhklcnwdjcieh</div>
+    <p>pw skills</p>
+    <span>shikha
+    </span>
+    <span>gupta</span>
+    <!-- list -->
+    <ol type="a"></ol>
+<dl>
+   <dt>
+    Iphone14
+<dd>this is latest and best model</dd>
+</dt> 
+</dl>
+<a href="mailto:guptashikha9074@gmail.com"> send me mail</a>
+<a href="/css/Lists and Interlinking pages.pdf" class="link" download>download</a>
+<video src="https://www.youtube.com/watch?v=eYvVZqvKpZM" controls autoplay muted width="200px"height="100px"> viedo </video>
+<audio src="/css/Nahi-Jaana(PaglaSongs).mp3" controls>audio</audio>
+<!-- table -->
+<table border cellpadding="20px" cellspace="5px">
+    <tr>
+        <th>sr.no</th>
+        <th>class1</th>
+        <th>class2</th>
+        <th>class3</th>
+        <th>Break</th>
+        <th>class4</th>
+        <th>class5</th>
+    </tr>
+   <tr>
+    <td>1</td>
+    <td>Hindi</td>
+    <td>Math</td>
+    <td>Chemistry</td>
+    <td rowspan="2">lunch</td>
+    <td>english</td>
+    <td rowspan="3">game</td>
+   </tr>
+   <tr>
+    <td>2</td>
+    <td>Physics</td>
+    <td>Math</td>
+    <td>Computer</td>
+    <td>sanskrit</td>
+    <!-- <td>game</td> -->
+   </tr>
+</table>
+<label for="name">enter your name</label>
+<input type="text" name="" id="name" value="shikha" autofocus><br>
+<!-- radio name ek karne par only one select -->
+Select gender<br>
+<!-- readonly attributes jo bhi i nput does not change and disabled highlight no-->
+<label for="male">Male</label>
+<input type="radio" name="gender" id="male" readonly disabled><br>
+<label for="female">feMale</label>
+<input type="radio" name="gender" id="female">
+<details>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsum sed? Dignissimos facere natus dolorum tempora nostrum ipsa, autem expedita?
+</details>
+<!-- css selector  -->
+<!-- universal selector -->
+<!-- descendant selector ek cheej ke ander dusri cheej aai ho -->
+ <h1>hello word</h1>
+<main>
+    <p>hoscuhoijlkn</p>
+ </main>
+ <h1>
+    <p>shikha gupta</p>
+</h1>
+<!-- difference child and adjescent sibling selector  section ke ander <p> is called child of section and bhar wala<p> sectoin ke is called sibling -->
+<section>
+    <p>hhdkjskjb</p>
+</section>
+<p>hello i am second pggjdsk</p>
+<p>hello ia shikha this is my first prcatice</p>
+<a href="http://google.com" target="_blank">google</a><br>
+<!-- new font trend "poppins" -->
+<!-- box model -->
+<!-- colors -->
+<br/>
+<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vitae a ex laboriosam deserunt obcaecati esse nesciunt placeat nostrum consectetur.</div>
+<!-- margin and padding -->
+<!-- margin auto charo taraf se margin dekar center m kr deta h -->
+
+<!-- text properties text-align((pura paragraph ke liye)),text-align-last(last wali line),text-align:"justtify (ek seedhe main)",direction-rtl(right to left and ltr same),text-transform,text-decoration ,  text-indent:"10px(pahli line kitne door se start hogi ) " -->
+<p class="padding">
+   shikha Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste asperiores ex cum enim praesentium a iure .
+</p>
+<!-- Display property inline-->
+<h5>hello i am shikha</h5>
+<h5>hjgfdtyuioljkhgb</h5>
+<!-- pesudo selector  -->
+<!-- hover  visited,active and link wprk-->
+<nav class="navigate">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+</nav>
+
+<p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eos quasi ut doloremque fugit magni minus molestiae natus et necessitatibus magnam aliquid mollitia facere ipsa non, officia vero nulla excepturi!</p>
+<!-- gradiant -->
+<div class="grad">Home</div>
+
+
+
+</body>
+</html>

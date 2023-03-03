@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style-type: none;
+   
+}
+body{
+  
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./photos/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /* background-repeat: no-repeat;
+    overflow-y: hidden;  */
+}
+
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    /* padding: 0 60px 0 60px; */
+    /* gap: 20px; */
+}
+
+.item{
+    display: flex;
+    gap: 75px;
+    /* color: #ffff00; */
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.logo img{
+    width: 100px;
+    margin-left: 30px;
+}
+
+li a{
+    color: #ffc233; 
+    font-family: 'Red Rose', cursive;
+    font-size: 20px;
+}
+
+.button{
+    margin-right: 30px;
+    background-color: #ff505f;
+    border: none;
+    color: #ffffff;
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: #ff505f;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+section{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   max-width: 1154px;
+   margin: 0 auto;
+  
+}
+
+
+.para{
+    /* max-width: 1154px; */
+    margin-top: 119px;
+    color: #ffc233;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px; 
+    opacity: 0.7;
+}
+
+.scroll{
+ 
+margin-left: auto;
+
+}
+
+/* responsive media query */
+
+@media  (max-width: 768px) 
+{
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+        
+        
+    }
+    .item{
+    display: inline;
+    font-size: 1rem;
+    margin-left: auto;
+
+       
+    }
+
+    /* .menu{
+        display:block
+    } */
+
+    .nav-btn{
+
+        display: none;
+    }
+    
+  
+
+    section{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin: auto;
+       
+     }
+     
+     
+     .para{
+         /* max-width: 1154px; */
+         margin-top: 50px;
+         color: #ffc233;
+         font-family: 'Poppins', sans-serif;
+         font-size: 3rem; 
+         opacity: 0.7;
+       
+        
+     }
+
+    .scroll{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 1rem;
+    }
+}
+
